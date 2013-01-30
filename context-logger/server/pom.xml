@@ -18,29 +18,30 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <parent>
-        <groupId>org.piraso</groupId>
-        <artifactId>sql-context-logger</artifactId>
-        <version>1.1-SNAPSHOT</version>
-    </parent>
-    
-    <artifactId>sql-context-logger-server</artifactId>
-    <packaging>jar</packaging>
-    <name>sql-context-logger-server</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>sql-context-logger-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>context-logger-server</artifactId>
-            <version>${piraso.version}</version>
-        </dependency>
-    </dependencies>
+  <parent>
+    <groupId>org.piraso</groupId>
+    <artifactId>sql-context-logger</artifactId>
+    <version>1.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>sql-context-logger-server</artifactId>
+  <packaging>jar</packaging>
+  <name>sql-context-logger-server</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>sql-context-logger-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>context-logger-server</artifactId>
+      <version>${piraso.version}</version>
+    </dependency>
+  </dependencies>
 </project>
