@@ -20,6 +20,7 @@ import org.openide.util.lookup.ServiceProvider;
 import org.piraso.api.entry.Entry;
 import org.piraso.api.sql.SQLDataViewEntry;
 import org.piraso.api.sql.SQLPreferenceEnum;
+import org.piraso.ui.api.EntryRowColumn;
 import org.piraso.ui.api.EntryRowRenderingProvider;
 
 import javax.swing.*;
@@ -38,7 +39,7 @@ public class SQLEntryRowRenderingProviderImpl implements EntryRowRenderingProvid
     }
 
     @Override
-    public void render(JLabel cell, Entry entry) {
+    public void render(JLabel cell, Entry entry, EntryRowColumn column) {
         if(SQLPreferenceEnum.CONNECTION_ENABLED.getPropertyName().equals(entry.getLevel())) {
             cell.setBackground(new Color(0xDAE9F6));
             cell.setForeground(new Color(98, 143, 181));
