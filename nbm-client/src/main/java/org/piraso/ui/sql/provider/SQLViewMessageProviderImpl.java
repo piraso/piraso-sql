@@ -16,6 +16,7 @@
 
 package org.piraso.ui.sql.provider;
 
+import org.apache.commons.lang.StringUtils;
 import org.openide.util.lookup.ServiceProvider;
 import org.piraso.api.entry.Entry;
 import org.piraso.api.sql.SQLViewEntry;
@@ -36,6 +37,6 @@ public class SQLViewMessageProviderImpl extends AbstractMessageProvider {
     public String toMessage(Entry entry) {
         SQLViewEntry sql = (SQLViewEntry) entry;
 
-        return sql.getSql();
+        return StringUtils.trim(sql.getSql());
     }
 }
